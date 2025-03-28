@@ -32,6 +32,7 @@ ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "
 ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging-jvm", version.ref = "ktorVersion"}
 ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktorVersion"}
 ktor-client-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktorVersion"}
+ktor-client-mock = { group = "io.ktor", name = "ktor-client-mock", version.ref = "ktorVersion"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

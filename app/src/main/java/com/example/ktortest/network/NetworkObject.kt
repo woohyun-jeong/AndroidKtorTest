@@ -2,7 +2,6 @@ package com.example.ktortest.network
 
 import android.util.Log
 import com.example.ktortest.network.NetworkObject.HOST
-import com.example.ktortest.network.NetworkObject.PATH
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.cio.CIO
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -13,7 +12,6 @@ import io.ktor.client.plugins.logging.Logging
 import io.ktor.client.plugins.observer.ResponseObserver
 import io.ktor.client.request.headers
 import io.ktor.http.URLProtocol
-import io.ktor.http.path
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 
@@ -35,7 +33,6 @@ val ktorClient = HttpClient(CIO) {
         url {
             protocol = URLProtocol.HTTPS
             host = HOST 	//URL Host
-            path(PATH)		//요청 EndPoint
         }
 
         //요청 Header 추가 (localProperies 네이버 API id, key)
